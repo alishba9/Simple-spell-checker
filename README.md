@@ -1,9 +1,9 @@
 # Simple-spell-checker
-In this assignment, you will write a simple spell-checker. Your program should be named Spell and take two file names as command-line arguments. Your program will be invoked from the command line as 
+This program is a simple spell-checker. The program should is named Spell and takes two file names as command-line arguments. The program will be invoked from the command line as 
                                   
                                   Spell dictionary.txt fileToCheck.txt
 
-The first file name is the dictionary with correctly spelled words, which I provide. The second file is the text to be spell-checked. Your program should check all words in fileToCheck.txt. Nothing needs to be done for words that are correctly spelled, i.e. those found in the dictionary file. Your program should suggest possible correct spellings for words not in the dictionary file by printing to the standard output. You should perform the following modifications of a misspelled word to handle commonly made mistakes:
+The first file name is the dictionary with correctly spelled words. The second file is the text to be spell-checked. The program should check all words in fileToCheck.txt. Nothing needs to be done for words that are correctly spelled, i.e. those found in the dictionary file. The program should suggest possible correct spellings for words not in the dictionary file by printing to the standard output. The program will perform the following modifications of a misspelled word to handle commonly made mistakes:
 
   • Letter substitution: iterate over characters in the misspelled word, trying to replace the current character with a different character. For example, in a misspelled word' lat', substituting' c' instead of' l' will produce the word' cat' in a dictionary. There are 25 different characters to try for the current character. Thus, if the length of a word is k characters, the number of modifications to try is 25k.
   
